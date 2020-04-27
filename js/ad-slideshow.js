@@ -1,5 +1,5 @@
 // 廣告輪播
-$('.ad-slideshow').slick({
+$('.ad-slideshow .container').slick({
     arrows: false,
     dots: true,
     infinite: false,
