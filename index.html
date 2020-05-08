@@ -1,958 +1,297 @@
 <!DOCTYPE html>
-<html lang="zh-CHT">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-	<title>米粉店家</title>
-	<!-- fontawesome-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
-	<!-- animation-->
-	<link rel="stylesheet" href="css/aos.css" />
-	<!-- slick-->
-	<link rel="stylesheet" href="css/slick.css" />
-	<link rel="stylesheet" href="css/slick-theme.css" />
-	<!-- custom css-->
-	<link rel="stylesheet" href="css/style.min.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>2019-2020獅子會300-G1區</title>
+
+	<!-- custom style -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 </head>
 
-<body class="l-sidebar-off page-index">
+<body class="page-index hsinchucity">
+	<!-- 
+        不同縣市顏色不一樣css也不一樣：
+        新竹市使用hsinchucity;
+        新竹縣使用hsinchucounty;
+        苗栗不需要
+        （此段註解之後請刪除）
+    -->
 
-	<div class="l-wrap">
-		<!--頁頭-->
-		<div class="l-header">
+	<div class="wrap">
+		<!-- 頁頭 -->
+		<header class="l-header">
+			<div class="row">
+				<div class="l-header__title">
+					<div class="logo">
+						<a href="index.php">
+							<h1>新竹市<br><span>新竹鳳凰會</span></h1>
+							<p><b>第六專區&nbsp;第十一分區</b></p>
+						</a>
+					</div>
+					<!-- 手機選單 -->
+					<div class="menu-toggle menu-toggle--first">
+						<div class="menu-toggle__inner">
+							<span class="fa fa-bars" aria-hidden="true"></span>
+							主選單
+						</div>
+					</div>
+					<!-- 選單 -->
+					<div class="menu">
+						<ul>
+							<li><a href="about.php">關於本會</a></li>
+							<li><a href="news.php">活動報導</a></li>
+							<li><a href="photos.php">社會服務</a></li>
+							<li><a href="member.php">會員名錄</a></li>
+							<li><a href="plan.php">年度計畫</a></li>
+							<li><a href="http://www.300g1.org.tw/">回300-G1區</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 輪播圖：建議尺寸 1300 x 455 px -->
+				<div class="l-header__slideshow">
+					<div>
+						<img src="images/2020-slideshow-01.png" alt="">
+					</div>
+					<div>
+						<img src="images/2020-slideshow-01.png" alt="">
+					</div>
+					<div>
+						<img src="images/2020-slideshow-01.png" alt="">
+					</div>
+					<div>
+						<img src="images/2020-slideshow-01.png" alt="">
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<!-- 主內容區 -->
+		<div class="l-main">
+			<div class="p-news">
+				<div class="container">
+					<div class="row">
+						<!-- 活動報導 -->
+						<div class="l-main-title clear">
+							<h3>活動報導</h3>
+						</div>
+
+						<ul class="p-news-list m-list--none row no-gutters">
+							<li>
+								<a href="news-detail.php">活動報導標題活動報導標題</a>
+								<div class="date is-highlight">2019/06/01</div>
+							</li>
+							<li>
+								<a href="news-detail.php">活動報導標題活動報導標題活動報導標題</a>
+								<div class="date is-highlight">2019/06/01</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			<div class="container">
-				<!-- menu toggle -->
-				<div class="l-menu-toggle"><span aria-hidden="true"></span></div>
-				<!-- logo -->
-				<h1 class="logo">
-					<a href="index.html">
-						<img src="http://isun.hc.net.tw/upload/Imager_201911121622259575.png" alt="LOGO">
-					</a>
-				</h1>
-				<!-- menu -->
-				<nav class="l-menu">
-					<ul class="l-menu-list">
-						<li><a href="news.html">最新消息</a></li>
-						<li><a href="product.html">商品介紹</a></li>
-						<!-- <li><a href="shop.html">商品購買</a></li>
-							<li><a href="apply.html">活動報名</a></li>
-							<li><a href="album.html">活動花絮</a></li> -->
-						<li><a href="content.html">聯絡我們</a></li>
-						<li><a href="index.html">回首頁</a></li>
-					</ul>
-					<!-- 按鈕顏色可改 -->
-					<a style="background-color: #d69241;" class="l-menu-shop m-btn m-btn--primary"
-						href="cart-01.html"><i class="fas fa-shopping-cart"></i>&nbsp;購物車</a>
-				</nav>
-				<div class="site-cache" id="site-cache"></div>
+
+				<div class="row">
+					<div class="l-main__content">
+						<div class="i-chairman">
+							<div class="row">
+								<!-- 會長的話 -->
+								<div class="i-chairman-img">
+									<span class="m-img fit"><img src="images/2020-chairman.png" alt=""></span>
+									<!-- 會長 -->
+									<div class="align-center">
+										<h3>會長&nbsp;薛宇伶</h3>
+										<span>2020-2021</span>
+									</div>
+								</div>
+								<div class="i-chairman-talk">
+									<div class="l-main-title">
+										<h3>會長的話</h3>
+									</div>
+									<p>
+										2019年宇伶以感恩的心接任第21屆會長，從此刻將是責任的開始，擔任會長是一項榮耀也是一份責任，未來我將延續著所有前會長的優良傳承，秉持獅子理念犧牲奉獻的精神，積極堆動會務，使本會會務更上一層樓，服務社會造福人群、協助弱勢，不辜負全體獅姐的託付與期許。<br><br>
+										會長 敬上
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- 本會簡介 -->
+						<div class="p-intro">
+							<div class="l-main-title">
+								<h3>本會簡介</h3>
+							</div>
+							<div class="m-box">
+								<ul class="m-list--none">
+									<li>
+										<dt>立案會名：</dt>
+										<dd>苗栗中央會</dd>
+									</li>
+									<li>
+										<dt>成立日期：</dt>
+										<dd>1983-04-29</dd>
+									</li>
+									<li>
+										<dt>現有會員：</dt>
+										<dd>32位</dd>
+									</li>
+									<li>
+										<dt>輔導母會：</dt>
+										<dd>苑裡國際獅子會</dd>
+									</li>
+									<li>
+										<dt>創會會長：</dt>
+										<dd>許碧雲</dd>
+									</li>
+									<li>
+										<dt>前任會長：</dt>
+										<dd>涂峻豪</dd>
+									</li>
+									<li>
+										<dt>現任會長：</dt>
+										<dd>陳博勝</dd>
+									</li>
+									<li>
+										<dt>歷任會長：</dt>
+										<dd>
+											創 會 會長：楊國安<br>第 九
+											屆會長：陳衡嶽<br>第十二屆會長：林享時<br>第十四屆會長：姚垂展<br>第十五屆會長：李傳<br>第十六屆會長：黃錦榮<br>第廿一屆會長：徐文生<br>第廿二屆會長：葉全<br>第廿三屆會長：周敬恒<br>第廿五屆會長：洪劉傑<br>第廿六屆會長：劉清麟<br>第廿七屆會長：李國正<br>第廿八屆會長：江接富<br>第廿九屆會長：羅友倫<br>第三十屆會長：陳永明<br>第三十一屆會長：涂峻豪<br>第三十二屆會長：陳博勝
+										</dd>
+									</li>
+									<li>
+										<dt>本會職員：</dt>
+										<dd>
+											會長：陳博勝<br>秘書：葉 全<br>財務：徐文生<br>連絡：林享時<br>總管：張維佑
+										</dd>
+									</li>
+									<li>
+										<dt>結盟兄弟會：</dt>
+										<dd>
+											日本國上山田獅子會<br>馬來西亞丹絨比拉拉獅子會<br>桃園中央獅子會
+										</dd>
+									</li>
+									<li>
+										<dt>輔導子會：</dt>
+										<dd>苗栗華馨獅子會（1992.04.14 ）</dd>
+									</li>
+									<li>
+										<dt>現隸屬於：</dt>
+										<dd>國際獅子會三OO-G1區苗栗縣區 第一專區 第一分區 苗栗中央會</dd>
+									</li>
+									<li>
+										<dt>本會地址：</dt>
+										<dd>苗栗縣頭屋鄉雙龍街29之2號</dd>
+									</li>
+									<li>
+										<dt>聯絡電話：</dt>
+										<dd>0988-205111</dd>
+									</li>
+									<li>
+										<dt>聯絡信箱：</dt>
+										<dd>mike@tdmall.com.tw</dd>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- 側邊區域 -->
+					<aside class="l-main__aside">
+						<!-- 社會服務：最多4筆 -->
+						<div class="l-main__aside-photos">
+							<div class="l-main-title clear">
+								<div class="more">
+									<a href="photos.php">more</a>
+								</div>
+								<h3>社會服務</h3>
+							</div>
+
+							<div class="p-photos__unit">
+								<a href="photos-detail.php">
+									<span class="m-img fit">
+										<img src="images/orga_201410301948278.jpg" alt="">
+									</span>
+									<small class="date is-highlight">2019/06/01</small>
+									<div>103年苗栗縣敬老愛老人活動103年苗栗縣敬老愛老人活動</div>
+								</a>
+							</div>
+							<div class="p-photos__unit">
+								<a href="photos-detail.php">
+									<span class="m-img fit">
+										<img src="images/orga_201410301948278.jpg" alt="">
+									</span>
+									<small class="date is-highlight">2019/06/01</small>
+									<div>103年苗栗縣敬老愛老人活動103年苗栗縣敬老愛老人活動</div>
+								</a>
+							</div>
+							<div class="p-photos__unit">
+								<a href="photos-detail.php">
+									<span class="m-img fit">
+										<img src="images/orga_201410301948278.jpg" alt="">
+									</span>
+									<small class="date is-highlight">2019/06/01</small>
+									<div>103年苗栗縣敬老愛老人活動103年苗栗縣敬老愛老人活動</div>
+								</a>
+							</div>
+							<div class="p-photos__unit">
+								<a href="photos-detail.php">
+									<span class="m-img fit">
+										<img src="images/orga_201410301948278.jpg" alt="">
+									</span>
+									<small class="date is-highlight">2019/06/01</small>
+									<div>103年苗栗縣敬老愛老人活動103年苗栗縣敬老愛老人活動</div>
+								</a>
+							</div>
+
+						</div>
+
+
+						<div class="l-main__aside-contact">
+							<!-- 聯絡我們 -->
+							<div class="l-main-title">
+								<h3>聯絡我們</h3>
+							</div>
+							<ul class="m-list--none">
+								<li><span class="is-highlight">新竹市新竹鳳凰會</span></li>
+								<li class="adress">307 新竹縣芎林鄉上山村三民路111號1F-3</li>
+								<li class="phone">0935-515340</li>
+								<li><a href="https://www.facebook.com/300g1phoenix" target="_blank"><img
+											src="images/icon03.gif" alt="" /></a></li>
+								<li><small>最後修改日期：2020-04-14</small></li>
+							</ul>
+						</div>
+
+						<div>
+							<a class="l-main__aside-login" href="#">管理者進入</a>
+						</div>
+					</aside>
+				</div>
 			</div>
 		</div>
 
-		<div class="l-main">
-			<!--內容區-->
-			<main class="l-main__body">
-				<!-- 內容區-->
-				<!-- 1.最新消息-->
-
-				<div class="i-news">
-
-					<div class="clear" data-aos="fade-right" data-aos-delay="200">
-						<div class="i-news__img">
-							<div class="m-img fit">
-								<img src="images/news-01.jpg" alt="" />
-							</div>
-							<div class="m-img fit">
-								<img src="images/news-02.jpg" alt="" />
-							</div>
-						</div>
-						<div class="i-news__body">
-							<h2 class="m-title" data-aos="fade-left">最新消息</h2>
-							<ul class="m-list--none">
-								<li>
-									<a href="news-detail.html">
-										<span class="date">2018.07.10</span>
-										<div class="i-news-title">最新消息標題最新消息標題最新消息標題</div>
-									</a>
-								</li>
-								<li>
-									<a href="news-detail.html">
-										<span class="date">2018.07.10</span>
-										<div class="i-news-title">最新消息標題最新消息標題</div>
-									</a>
-								</li>
-								<li>
-									<a href="news-detail.html">
-										<span class="date">2018.07.10</span>
-										<div class="i-news-title">最新消息標題最新消息標題最新消息標題</div>
-									</a>
-								</li>
-								<li>
-									<a href="news-detail.html">
-										<span class="date">2018.07.10</span>
-										<div class="i-news-title">最新消息標題最新消息標題</div>
-									</a>
-								</li>
-								<li>
-									<a href="news-detail.html">
-										<span class="date">2018.07.10</span>
-										<div class="i-news-title">最新消息標題最新消息標題最新消息標題</div>
-									</a>
-								</li>
-							</ul>
-							<div class="align-center">
-								<a class="m-btn m-btn--secondary" href="news.html">查看全部</a>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<div class="container">
-
-					<!-- 2.最新商品-->
-					<div class="p-product">
-						<h2 class="m-title">最新商品</h2>
-						<!-- 最新商品__tab -->
-						<ul class="p-product__tabs m-list--none align-center clear">
-							<li> <a href="#Tab1">分類名稱</a></li>
-							<li> <a href="#Tab2">分類名稱</a></li>
-							<li> <a href="#Tab3">分類名稱</a></li>
-							<li> <a href="#Tab4">分類名稱</a></li>
-							<li> <a href="#Tab5">分類名稱</a></li>
-							<li> <a href="#Tab6">分類名稱</a></li>
-						</ul>
-						<!-- Tab1 -->
-						<div class="p-product__list" id="Tab1">
-							<ul class="m-list--none">
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-03.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-04.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="200">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="300">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- Tab2 -->
-						<div class="p-product__list" id="Tab2">
-							<ul class="m-list--none">
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-03.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-04.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="200">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="300">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- Tab3 -->
-						<div class="p-product__list" id="Tab3">
-							<ul class="m-list--none">
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-03.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-04.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="200">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="300">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- Tab4 -->
-						<div class="p-product__list" id="Tab4">
-							<ul class="m-list--none">
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-03.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-04.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="200">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="300">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- Tab5 -->
-						<div class="p-product__list" id="Tab5">
-							<ul class="m-list--none">
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-03.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-04.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="200">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="300">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- Tab6 -->
-						<div class="p-product__list" id="Tab6">
-							<ul class="m-list--none">
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card clear" href="product-detail.html">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="m-card-text">商品簡介商品簡介商品簡介，商品簡介商品簡介商品簡介</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"> <i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="0">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-03.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="100">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-04.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="200">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-01.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li data-aos="fade-up" data-aos-delay="300">
-									<a class="m-card" href="#">
-										<div class="m-card__img">
-											<span class="m-img fit">
-												<img src="images/product-02.jpg" alt="" />
-											</span>
-										</div>
-										<div class="m-card__body">
-											<div class="m-card-title">商品名稱商品名稱商品</div>
-											<div class="clear">
-												<small class="is-highlight"><span
-														class="p-product__sale">NT$300</span></small>
-												<div class="m-btn m-btn--secondary"><i
-														class="fas fa-shopping-cart"></i>&nbsp;我要購買</div>
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- 3.輪播圖建議尺寸：1180x350
-						<div class="i-slideshow" data-aos="fade-top">
-							<div class="m-img fit"><img src="images/slideshow-01.jpg" alt=""/></div>
-							<div class="m-img fit"><img src="images/slideshow-01.jpg" alt=""/></div>
-							<div class="m-img fit"><img src="images/slideshow-01.jpg" alt=""/></div>
-							<div class="m-img fit"><img src="images/slideshow-01.jpg" alt=""/></div>
-							<div class="m-img fit"><img src="images/slideshow-01.jpg" alt=""/></div>
-						</div>-->
-					<!-- 4.關於我們-->
-					<div class="i-about">
-						<div class="clear">
-							<div class="i-about__img" data-aos="zoom-in-right" data-aos-delay="300">
-								<span class="m-img fit">
-									<img src="images/about-01.png" alt="" />
-								</span>
-							</div>
-							<div class="i-about__body" data-aos="zoom-in-left">
-								<h2 class="m-title align-right">關於我們</h2>
-								<div class="i-about-text">
-									<p>經過20年努力，台灣於2017年5月獲得世界動物衛生組織（OIE）認定為施打疫苗口蹄疫非疫區；今年7月1日起，台澎馬地區豬隻及偶蹄類動物全面停打口蹄...</p>
-									<br>
-									<br>
-									<br>
-								</div>
-								<div class="align-right">
-									<a class="m-btn m-btn--secondary" href="about-detail.html" id="AboutBtn"
-										data-effect="mfp-zoom-out">查看完整</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</main>
-			<!--頁尾-->
-			<!-- footer：背景顏色可改 -->
-			<footer style="background-color: #181818;" class="l-footer">
-				<div class="container">
-					<ul class="m-list--inline">
-						<li><a href="return.html">回報匯款</a></li>
-						<li><a href="cart-01.html">購物車</a></li>
-						<li><a href="privacy.html">隱私權政策</a></li>
-					</ul>
-					<div>
-						地址：新竹市竹光路460號<br />
-						電話：03-5232156　傳真：03-5261630　手機：0934-353727<br />
-						聯絡信箱：<a href="mailto:kuo4955@yahoo.com.tw">kuo4955@yahoo.com.tw</a><br />
-					</div>
-					<span>Copyright © 2018 - <a href="#">ESUN</a> Design.</span><span>累計瀏覽人次：00222152</span>
-				</div>
-			</footer>
-			<!-- go-top：背景顏色可改 -->
-			<div style="background-color: #181818;" class="go-top">
-				<a class="go-top__icon" href="#">
-					<i class="fa fa-angle-up fa-3x" aria-hidden="true"></i>
-					<div>TOP</div>
-				</a>
-			</div>
-
-			<!-- 回報匯款 -->
-			<div class="return-btn">
-				<a href="return.html">
-					回報匯款
-				</a>
-			</div>
-
-			<!-- 右下角社群按鈕 -->
-			<div class="social-container">
-				<div class="social-btn"><i class="far fa-comment-dots"></i></div>
-				<ul class="social-group">
-					<!-- line@ -->
-					<li><a class="lineat-btn open-popup-link" href="#lineat-popup"><img src="images/lineat-icon.svg"
-								alt=""></a></li>
-					<!-- line -->
-					<li><a class="line-btn open-popup-link" href="#line-popup"><img src="images/line-icon.svg"
-								alt=""></a></li>
-					<!-- facebook ID 可以從 https://findmyfbid.com/ 查詢 -->
-					<li><a class="fb-btn" href="https://m.me/{facebook ID}" target="_blank"><i
-								class="fab fa-facebook-f"></i></a></li>
-					<!-- 電話 -->
-					<li><a class="phone-btn" href="tel:035315657"><i class="fas fa-phone"></i></a></li>
-					<!-- EMAIL -->
-					<li><a class="email-btn" href="mailto:yuchi_090620@hc.net.tw"><i class="far fa-envelope"></i></a>
-					</li>
+		<!-- 頁尾 -->
+		<footer class="l-footer">
+			<div class="container">
+				<ul class="m-list--none">
+					<li>地址：新竹市300民生路193號12樓（財經大樓）</li>
+					<li>電話：03-5311777 傳真：03-5311780</li>
+					<li>聯絡信箱：<a href="mailto:lions300g1@gmail.com">lions300g1@gmail.com</a></li>
+					<li>2020-2021 國際獅子會300-G1區 版權所有 維護單位：<a href="http://esun.com.tw/" target="_blank">翊晟科技</a></li>
 				</ul>
 			</div>
-
-			<!-- line popup -->
-			<div id="line-popup" class="white-popup mfp-hide">
-				<header class="line-header">LINE</header>
-				<!-- 網址：從 line 加入好友 > 簡訊 取得 -->
-				<iframe src="https://line.me/ti/p/12345" wh-src="lineIframeURL" scrolling="no" frameborder="0"
-					allowtransparency="true">
-				</iframe>
-			</div>
-
-			<!-- line@ popup -->
-			<div id="lineat-popup" class="white-popup mfp-hide">
-				<header class="line-header">LINE@</header>
-				<!-- 網址：https://line.me/ti/p/@帳號 -->
-				<iframe src="https://line.me/ti/p/@yyf2906d" wh-src="lineIframeURL" scrolling="no" frameborder="0"
-					allowtransparency="true">
-				</iframe>
-			</div>
-		</div>
+		</footer>
 	</div>
-	<!-- Jquery-->
+	<!-- input jquery -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.tabslet.min.js"></script>
-
-	<script src="js/popup-cover.js"></script>
-	<script src="js/popup-bottom.js"></script>
-	<script src="js/ad-slideshow.js"></script>
 	<script src="js/script.js"></script>
-	<script>
-		// product tab
-		$('.p-product').tabslet({
-			animation: true
-		});
-
-		// slideshow
-		$('.i-news__img').slick({
-			fade: true
-		});
-
-		// modal
-		$('#AboutBtn').magnificPopup({
-			type: 'ajax',
-			removalDelay: 300,
-			callbacks: {
-				beforeOpen: function () {
-					this.st.mainClass = this.st.el.attr('data-effect');
-				}
-			},
-			midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-		});
-	</script>
-
 </body>
 
 </html>
