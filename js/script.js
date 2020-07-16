@@ -1,1 +1,44 @@
-$(document).ready(function(l){var e=l(".go-top");l(window).scroll(function(){300<l(this).scrollTop()?e.addClass("visible"):e.removeClass("visible fade-out"),1200<l(this).scrollTop()&&e.addClass("fade-out")}),e.on("click",function(e){e.preventDefault(),l("body,html").animate({scrollTop:0},700)})}),$(document).ready(function(){var l=$(".menu"),a=$(".menu-toggle"),e=$(".has-sub > a");a.click(function(e){e.preventDefault(),a.toggleClass("active"),l.toggleClass("active")}),e.click(function(e){e.preventDefault(),$(this).toggleClass("active").next("ul").toggleClass("active")}),$(".l-header__slideshow").slick({autoplay:!0,autoplaySpeed:2e3,fade:!0,arrows:!1,cssEase:"linear"})});
+// go-top
+$(document).ready(function(){
+	// browser window scroll (in pixels) after which the "back to top" link is shown
+	var offset = 300,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 1200,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.go-top');
+
+	//hide or show the "back to top" link
+	$(window).scroll(function(){
+		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('visible') : $back_to_top.removeClass('visible fade-out');
+		if( $(this).scrollTop() > offset_opacity ) { 
+			$back_to_top.addClass('fade-out');
+		}
+	});
+
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+			}, scroll_top_duration
+		);
+	});
+
+	// slide menu
+	$('.l-menu-toggle').click(function(){
+		$('body').toggleClass('active');
+	});
+
+	$('.has-sub').click(function(){
+		$(this).find('.l-menu__sub').toggleClass('active');
+	});
+	
+	if($('.m-jumbotron').length){	
+		$( '.m-jumbotron' ).imagesLoaded( {background: true}, function () {
+			$( '.m-jumbotron' ).addClass( 'loaded' );
+		} );
+	}
+
+});
