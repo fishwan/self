@@ -19,23 +19,53 @@
 <body>
     <div class="container-fluid">
         <nav class="nav">
-            <a class="nav-link" aria-current="page" href="#">我是<br>店家</a>
-            <a class="nav-link" href="#">我是<br>網友</a>
-            <a class="nav-link" href="#">關於<br>我們</a>
-            <a class="nav-link" href="#">聯絡<br>我們</a>
+            <a class="nav-link" aria-current="page" href="shop.html">我是<br>店家</a>
+            <a class="nav-link" href="user.html">我是<br>網友</a>
+            <a class="nav-link" href="about.html">關於<br>我們</a>
+            <a class="nav-link" href="contact.html">聯絡<br>我們</a>
         </nav>
-        <div class="form-row px-3">
-            <div class="form-group col-6">
-                <select id="city" class="custom-select custom-select-sm">
-                    <option value="" selected disabled>請選擇縣市</option>
-                </select>
+        <div class="area-select row">
+            <div class="m-form__group">
+                <div class="select-wrapper">
+                    <select id="city" class="m-form-control">
+                        <option value="" selected disabled>請選擇縣市</option>
+                    </select>
+                </div>
             </div>
-            <div class="form-group col-6">
-                <select id="area" class="custom-select custom-select-sm">
-                    <option value="" selected disabled>請選擇鄉鎮市區</option>
-                </select>
+            <div class="m-form__group">
+                <div class="select-wrapper">
+                    <select id="area" class="m-form-control">
+                        <option value="" selected disabled>請選擇鄉鎮市區</option>
+                    </select>
+                </div> 
             </div>
         </div>
+        <!-- <aside class="shop shop-list">
+            <ul class="m-list--none">
+                <li class="shop-list-item">
+                    <h2 class="shop-list-item__name">店家名稱</h2>
+                    <div class="shop-list-item__adress">
+                        <dt>地址</dt>
+                        <dd></dd>
+                    </div>
+                    <div class="shop-list-item__phone">
+                        <dt>電話</dt>
+                        <dd></dd>
+                    </div>
+                </li>
+                <li class="shop-list-item">
+                    <h2 class="shop-list-item__name">店家名稱</h2>
+                    <div class="shop-list-item__adress">
+                        <dt>地址</dt>
+                        <dd></dd>
+                    </div>
+                    <div class="shop-list-item__phone">
+                        <dt>電話</dt>
+                        <dd></dd>
+                    </div>
+                </li>
+            </ul>
+        </aside> -->
         <aside id="Shop" class="shop hidden">
             <!-- <div class="shop__inner">
                 <div class="swiper-container">
@@ -74,7 +104,6 @@
         </aside>
         <!-- 地圖 -->
         <div id="map"></div>
-        <input type="button" class="GeoBtn" id="jsGeoBtn" value="定位鈕">
     </div>
 
     <!-- jquery -->

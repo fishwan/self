@@ -3,10 +3,10 @@
         zoomControl: false // 是否顯示預設的縮放按鈕（左上角）
     }).setView([24.8090765, 120.9709791], 13);
 
-    const geocoder = L.Control.geocoder({
-        defaultMarkGeocode: true,
-        position: 'topleft'
-    }).addTo(map);
+    // const geocoder = L.Control.geocoder({
+    //     defaultMarkGeocode: true,
+    //     position: 'topleft'
+    // }).addTo(map);
 
     // 自訂縮放按鈕位置
     const zoom = L.control.zoom({
@@ -78,7 +78,6 @@
             mask = redIcon;
 
             const shopName = data[i].properties.name;
-            const shopTags = data[i].properties.tags;
             const shopAddress = data[i].properties.address;
             const shopPhone = data[i].properties.phone;
             const shopavAilable = data[i].properties.available;
@@ -92,6 +91,7 @@
                     let str = '';
                     let shopImg = '';
                     let shopTags = '';
+                    const closeShop = '<div class="close">關閉</div>';
 
                     $.each(data[i].properties.img, function (j, imgUrl) {
                         shopImg += '<div class="swiper-slide"><a class="lightbox" href="'+ imgUrl +'"><img src="'+ imgUrl +'" alt=""></a></div>'
@@ -101,7 +101,8 @@
                         shopTags += '<a href="#">'+ tags +'</a>'
                     });
 
-                    str =`<div class="shop__inner">
+                    str =`${closeShop}
+                        <div class="shop__inner">
                             <div class="swiper-container">
                                 <div class="shop-img swiper-wrapper">
                                     ${shopImg}
@@ -127,6 +128,7 @@
                                     <dt>其他資訊</dt>
                                     <dd>${shopNote}</dd>
                                 </li>
+                                <li class="align-center"><a class="m-btn m-btn-outline--primary m-btn--sm" href="#">提出修改</a></li>
                             </ul>
                             <hr>
                             <div class="shop-tags">${shopTags}</div>
