@@ -178,8 +178,11 @@
     function getUserPosition() {
         if(navigator.geolocation) {
             function showPosition(position) {
-                L.marker([position.coords.latitude, position.coords.longitude], {icon: userPosIcon}).addTo(map);
-                map.setView([position.coords.latitude, position.coords.longitude], 16);
+                userLat = position.coords.latitude;
+                userLng = position.coords.longitude;
+
+                map.setView([userLat, userLng], 16);
+                marker.setLatLng([userLat,userLng]);
             }
             function showError() {
                 console.log('抱歉，現在無法取的您的地理位置。')
