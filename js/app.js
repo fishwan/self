@@ -1,7 +1,9 @@
    
     const map = L.map('map',{
         zoomControl: false // 是否顯示預設的縮放按鈕（左上角）
-    }).setView([24.8090765, 120.9709791], 13);
+    }).setView([24.8090765, 120.9709791], 16);
+
+    // const marker = L.marker([0, 0] , {icon:redIcon}).addTo(map);
 
     // const geocoder = L.Control.geocoder({
     //     defaultMarkGeocode: true,
@@ -162,7 +164,7 @@
     function getUserPosition() {
         if(navigator.geolocation) {
             function showPosition(position) {
-                L.marker([position.coords.latitude, position.coords.longitude], {icon: userPosIcon}).addTo(map);
+                L.marker([position.coords.latitude, position.coords.longitude], {icon: redIcon}).addTo(map);
                 map.setView([position.coords.latitude, position.coords.longitude], 16);
             }
             function showError() {
