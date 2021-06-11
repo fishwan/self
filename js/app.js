@@ -56,16 +56,17 @@
             data = JSON.parse(xhr.responseText).features;
             // 為地圖加上 marker的函式
             addMarker();
-            getUserPosition();
+            
         }
     }
 
     // 新增 init 函式，讓網頁載入時可以預設執行 init 裡的函式
     function init(){
+        getUserPosition();
         getData();
     }
 
-    // 添加
+    // 添加Markers
     function addMarker(){
 
         for(let i = 0; i < data.length; i++){

@@ -106,6 +106,7 @@
         <div id="map"></div>
     </div>
 
+    <div id="ajax"></div>
     <!-- jquery -->
     <script src="js/jquery.min.js"></script>
     <!-- leaflet.js -->
@@ -115,6 +116,24 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!-- lightbox.js -->
     <script src="js/simplelightbox-master/dist/simple-lightbox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.nav-link').on('click', function(e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+                if ($('#ajax').is(':visible')) {
+                    $('#ajax').css({ display:'block' }).animate({ height:'0' }).empty();
+                }
+                $('#ajax').css({ display:'block' }).animate({ height:'200px' },function() {
+                    // $('#ajax').html('<img id="loader" src="http://example.com/loader.gif">');
+                    // $('#loader').css({ border:'none', position:'relative', top:'24px', left:'48px', boxShadow:'none' });
+                    $('#ajax').load(href, function() {
+                        $('#ajax').hide().fadeIn('slow').colorFade({ 'fadeColor': 'rgb(253,253,175)' });
+                    });
+                });
+            });
+        });
+    </script>
     <!-- Custom CSS -->
     <script src="js/app.js"></script>
 </body>
